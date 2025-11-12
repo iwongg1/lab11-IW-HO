@@ -28,11 +28,6 @@ def add(a, b):
     def mul(a, b):
         return a * b
 
-    def div(a, b):
-        if a == 0:
-            raise ZeroDivisionError("Cannot divide by zero!")
-        return b / a
-
     def log(a, b):
         if a <= 0:
             raise ValueError("Base must be larger than 0!")
@@ -40,5 +35,6 @@ def add(a, b):
 
     def exp(a, b):
         return a ** b
+
 
 
