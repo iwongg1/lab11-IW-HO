@@ -31,6 +31,13 @@ def sub(a, b):
 def mul(a, b):
     return a * b
 
+def div(a, b):
+    try:
+        result = b / a
+    except ZeroDivisionError:
+        print("Cannot divide by 0!")
+    return result
+
 def log(a, b):
     if a <= 0:
         raise ValueError("Base must be larger than 0!")
