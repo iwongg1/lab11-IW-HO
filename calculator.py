@@ -1,3 +1,8 @@
+# https://github.com/iwongg1/lab11-IW-HO
+# Partner 1: Isabella Wong
+# Partner 2: Holly Overholser
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
