@@ -37,8 +37,8 @@ def div(a, b):
     return result
 
 def log(a, b):
-    if a <= 0:
-        raise ValueError("Base must be larger than 0!")
+    if a <= 1:
+        raise ValueError("Base must be larger than 1!")
     if b <= 0:
         raise ValueError("Argument must be larger than 0!")
     return math.log(b, a)
