@@ -13,11 +13,9 @@ One function per operation, in order.
 import math
 
 def square_root(a):
-    try:
-        result = math.sqrt(a)
-    except ValueError:
-        print("Must be greater than or equal to 0!")
-    return result
+    if a < 0:
+        raise ValueError("Must be greater than or equal to 0!")
+    return math.sqrt(a)
 
 def hypotenuse(a,b):
     return math.hypot(a,b)
