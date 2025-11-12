@@ -35,7 +35,7 @@ def div(a, b):
     try:
         result = b / a
     except ZeroDivisionError:
-        print("Cannot divide by 0!")
+        raise ZeroDivisionError("Cannot divide by 0!")
     return result
 
 def log(a, b):
