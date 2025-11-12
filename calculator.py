@@ -41,6 +41,8 @@ def div(a, b):
 def log(a, b):
     if a <= 0:
         raise ValueError("Base must be larger than 0!")
+    if b <= 0:
+        raise ValueError("Argument must be larger than 0!")
     return math.log(b, a)
 
 def exp(a, b):
